@@ -21,7 +21,7 @@ void loop() {
   // read the state of the pushbutton value:
   buttonStateOne = digitalRead(buttonPinOne);
   buttonStateTwo = digitalRead(buttonPinTwo);
-  if (buttonStateOne == HIGH && buttonStateTwo) {
+  if (buttonStateOne == HIGH && buttonStateTwo==HIGH) {
     // turn green LED on:
     digitalWrite(ledPinTwo, LOW);
     digitalWrite(ledPinOne, HIGH);       
